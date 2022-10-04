@@ -34,7 +34,7 @@ class Bowling
   private
 
   def standard_case(element, index)
-    if element.include? 0
+    if element.include? 10
       @scores << element.sum
       @bonus[index + 1] += 1
       @bonus[index + 2] += 1
@@ -47,7 +47,7 @@ class Bowling
   end
 
   def last_roll_case(element, index)
-    if element.include? 0
+    if element.include? 10
       @scores << element.sum
       @scores << 10
       @scores << 10
